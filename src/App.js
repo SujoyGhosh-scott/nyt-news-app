@@ -5,7 +5,15 @@ import axios from "./axios"
 
 function App() {
   const [results, setResults] = useState([])
+  const getnews = () => {
+    axios.get('/content/all/all.json?api-key=ZYNlgVKOoHYVSC1cwSghLQS88SKduIP8')
+    .then((res) => {
+      //console.log(res.data.results)
+      setResults(res.data.results)
+    })
+  }
 
+  /*
   const getnews = () => {
     axios.get(`/content/all/all.json?api-key=${process.env.REACT_APP_KEY}`)
     .then((res) => {
@@ -13,6 +21,7 @@ function App() {
       setResults(res.data.results)
     })
   }
+  */
 
   useEffect(() => {
     getnews()
