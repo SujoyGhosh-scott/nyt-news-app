@@ -2,7 +2,7 @@
   "name": "nyt-news-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/SujoyGhosh-scott/nyt-news-app.git",
+  "homepage": "https://SujoyGhosh-scott.github.io/nyt-news-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
